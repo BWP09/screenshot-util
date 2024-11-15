@@ -1,0 +1,17 @@
+[package]
+name = "screenshot-util"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arboard = "3.4.1"
+chrono = "0.4.38"
+dirs = "5.0.1"
+eframe = "0.29.1"
+image = "0.25.5"
+mouse_position = "0.1.4"
+screenshots = "0.8.10"
+
+[profile.release] # Optimization stuff
+strip = true
+opt-level = "z"
